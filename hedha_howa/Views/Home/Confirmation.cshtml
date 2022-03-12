@@ -1,0 +1,109 @@
+﻿@{ ViewBag.Title = "Forms";
+    ViewBag.SubTitle = "Advanced";
+    Layout = null;}
+
+@section Menu {
+    @Scripts.Render("~/Scripts/Forms/Advanced/menu")
+}
+
+@Styles.Render("~/AdminLTE/plugins/daterangepicker/css")
+@Styles.Render("~/AdminLTE/plugins/icheck/css")
+@Styles.Render("~/AdminLTE/plugins/colorpicker/css")
+@Styles.Render("~/AdminLTE/plugins/timepicker/css")
+@Styles.Render("~/AdminLTE/plugins/select2/css")
+@Styles.Render("~/AdminLTE/dist/css")
+@Styles.Render("~/AdminLTE/dist/css/skins")
+@Styles.Render("~/AdminLTE/plugins/font-awesome/css")
+@Styles.Render("~/AdminLTE/plugins/ionicons/css")
+@Styles.Render("~/AdminLTE/bootstrap/css")
+@Styles.Render("~/AdminLTE/dist/css")
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HLI</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @Styles.Render("~/AdminLTE/plugins/font-awesome/css")
+    @Styles.Render("~/AdminLTE/plugins/ionicons/css")
+    @Styles.Render("~/AdminLTE/bootstrap/css")
+    @Styles.Render("~/AdminLTE/dist/css")
+    @Styles.Render("~/AdminLTE/dist/css/skins")
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <header class="main-header">
+        <a href="@Url.Action("Dashboard", "Home")" class="logo">
+            <span class="logo-mini"><b>H</b>li</span>
+            <span class="logo-lg">
+                <b>H</b>li
+            </span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row" style="text-align:center">
+      
+            <div class="box box-danger">
+                <div class="box-header with-border "  style="padding-top: 50px">
+                    
+                    <h2 style="display:inline-block;font-size:40px;font-family:'Franklin Gothic Medium'">
+                    Voulez vous confirmer la cloture de la demande?
+                    </h2>
+
+                    <div style=" text-align:center ; padding-top:50px">
+
+
+                        <div style="display:inline-block">
+                            <div style="float:left; overflow : auto ;margin-right:10px">
+                                <button type="button" class="btn btn-block btn-success btn-flat">confimer</button>
+
+                            </div>
+                            <div style="float:left; overflow : auto ;margin-right:10px">
+                                <button type="button" class="btn btn-block btn-danger btn-flat">Annuler</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+    
+
+        @Scripts.Render("~/AdminLTE/plugins/jquery/js")
+
+        @Scripts.Render("~/AdminLTE/bootstrap/js")
+        @Scripts.Render("~/AdminLTE/plugins/slimscroll/js")
+        @Scripts.Render("~/AdminLTE/plugins/fastclick/js")
+        @Scripts.Render("~/Scripts/Shared/_Layout")
+        @Scripts.Render("~/AdminLTE/dist/js")
+
+        @section Scripts {
+            @Scripts.Render("~/AdminLTE/plugins/select2/js")
+            @Scripts.Render("~/AdminLTE/plugins/input-mask/js")
+            @Scripts.Render("~/AdminLTE/plugins/momentjs/js")
+            @Scripts.Render("~/AdminLTE/plugins/daterangepicker/js")
+            @Scripts.Render("~/AdminLTE/plugins/colorpicker/js")
+            @Scripts.Render("~/AdminLTE/plugins/timepicker/js")
+            @Scripts.Render("~/AdminLTE/plugins/icheck/js")
+            @Scripts.Render("~/Scripts/Forms/Advanced")
+        }
+
+
+    </body>
+
+</html>

@@ -1,0 +1,154 @@
+﻿@{ ViewBag.Title = "Forms";
+    ViewBag.SubTitle = "Editors";
+    Layout = null;}
+
+@section Menu {
+    @Scripts.Render("~/Scripts/Forms/Editors/menu")
+}
+
+@Styles.Render("~/AdminLTE/plugins/bootstrap-wysihtml5/css")
+@Styles.Render("~/AdminLTE/plugins/font-awesome/css")
+@Styles.Render("~/AdminLTE/plugins/ionicons/css")
+@Styles.Render("~/AdminLTE/bootstrap/css")
+@Styles.Render("~/AdminLTE/dist/css")
+@Styles.Render("~/AdminLTE/dist/css/skins")
+@Scripts.Render("~/AdminLTE/plugins/jquery/js")
+
+@Scripts.Render("~/AdminLTE/bootstrap/js")
+@Scripts.Render("~/AdminLTE/plugins/slimscroll/js")
+@Scripts.Render("~/AdminLTE/plugins/fastclick/js")
+@Scripts.Render("~/Scripts/Shared/_Layout")
+@Scripts.Render("~/AdminLTE/dist/js")
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HLI</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">  
+
+</head>
+
+<header class="main-header">
+    <a href="@Url.Action("Dashboard", "Home")" class="logo">
+        <span class="logo-mini"><b>H</b>li</span>
+        <span class="logo-lg">
+            <b>H</b>li
+        </span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+   
+        
+    <div class="box box-info">
+
+        <div class="box-header with-border">
+            <h3 class="box-title">Note</h3>
+        </div>
+        <div class="box-body pad" style="padding-left:250px;padding-right:30px;float:left ; width:70%">
+            <div class="form-group">
+                <label>
+                    Avant de fournir un service support encore meilleur, nous recueillons votre retour
+                    sur notre performance suite au clôture de cette demande. Nous vous invitons
+                    dans ce sens de remplir l'enquête de satisfaction ci-dessous :
+                </label>
+                <textarea class="form-control" rows="10" placeholder="Enter ..."></textarea>
+            </div>
+            <div class="box">
+
+                <div class="box-body pad">
+                    <div class="form-group">
+                        <label>Reponse : </label>
+                        <select class="form-control">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                        </select>
+                        <p>
+                            <br />
+                            Très satisfait (e)<br />
+                            Satisfait (e)<br />
+                            Neutre<br />
+                            Insatisfait (e)<br />
+                            Moyennement satisfait (e)
+                        </p>
+                    <div style="text-align:center">
+                     <button type="button" class="btn btn-block btn-success btn-flat" style="width:30%;height:70px;display:inline-block">confimer</button>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 " style="margin-left:150px ; padding-top:50px ; width:10%">
+
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <p></b>Date de creation</b></p>
+                    <p>dd/mm/yyyy</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="small-box bg-green">
+                <div class="inner">
+
+                    <p><b>Projet</b></p>
+                </div>
+
+
+            </div>
+
+
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <p><b>Raison de</b></p>
+                    <p>Statue resolue </p>
+                </div>
+
+
+            </div>
+
+
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <p><b>Commentaire</b></p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+           
+      
+        
+    
+
+</body>
+
+</html>
+
+
+@section Scripts {
+    @Scripts.Render("~/AdminLTE/plugins/ckeditor/js")
+    @Scripts.Render("~/AdminLTE/plugins/bootstrap-wysihtml5/js")
+    @Scripts.Render("~/Scripts/Forms/Editors")
+}
+

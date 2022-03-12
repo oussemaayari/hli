@@ -1,0 +1,212 @@
+﻿@{ ViewBag.Title = "Forms";
+    ViewBag.SubTitle = "General";
+    Layout = ""; }
+
+@section Menu {
+    @Scripts.Render("~/Scripts/Forms/General/menu")
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HLI</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @Styles.Render("~/AdminLTE/plugins/font-awesome/css")
+    @Styles.Render("~/AdminLTE/plugins/ionicons/css")
+    @Styles.Render("~/AdminLTE/bootstrap/css")
+    @Styles.Render("~/AdminLTE/dist/css")
+    @Styles.Render("~/AdminLTE/dist/css/skins")
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <header class="main-header">
+        <a href="@Url.Action("Dashboard", "Home")" class="logo">
+            <span class="logo-mini"><b>H</b>li</span>
+            <span class="logo-lg">
+                <b>H</b>li
+            </span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+          
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">               
+                   
+                    
+
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="" >        
+
+            
+        <div class="box box-warning">
+            <div class="box-header with-border">
+                <h3 class="box-title">TICKET</h3>
+            </div>
+            <div class="box-body" style="padding-left:250px;padding-right:30px;float:left ; width:70%">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Titre</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="10" placeholder="Enter ..."></textarea>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                notifier par mail
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>Text</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>text</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">ORANGE</option>
+                                <option>Biat</option>
+                                <option>Ooredoo</option>
+                                <option>Hli</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>text</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">ORANGE</option>
+                                <option>Biat</option>
+                                <option>Ooredoo</option>
+                                <option>Hli</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>Text</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>Text</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>text</label>
+                            <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">ORANGE</option>
+                                <option>Biat</option>
+                                <option>Ooredoo</option>
+                                <option>Hli</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+
+
+                        <div style="float:left; overflow : auto; width:20%;margin-right:10px">
+                            <label>Date masks:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                            </div>
+                        </div>
+
+
+
+                        <div style="float:left; width:20%;margin-right:10px">
+                            <label>Text</label>
+                            <button type="button" class="btn btn-block btn-success btn-flat">+</button>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group" style="padding-top:150px">
+                        <label>Textarea</label>
+                        <textarea class="form-control" rows="5" placeholder="Enter ..."></textarea>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+            <div class="col-md-2 " style="margin-left:150px ; padding-top:50px ; width:10%">
+
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <p></b>Date de creation</b></p>
+                        <p>dd/mm/yyyy</p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="small-box bg-green">
+                    <div class="inner">
+
+                        <p><b>Projet</b></p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                        <p><b>Raison de</b></p>
+                        <p>Statue resolue </p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <p><b>Commentaire</b></p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+         
+
+       
+        
+
+    </div>
+</body>
+
+</html>
